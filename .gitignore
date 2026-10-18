@@ -1,0 +1,19 @@
+# Build output (CI uploads these as artifacts)
+fonts/
+out/
+build.stamp
+sources/instance_ufo/
+sources/instance_ufos/
+sources/build.ninja
+sources/.ninja_log
+sources/master_ufo/
+sources/*.designspace
+
+# Tooling
+venv/
+__pycache__/
+.DS_Store
+
+# Glyphs autosave / backups
+*.glyphs.bak
+sources/**/Autosave*

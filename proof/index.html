@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spizz Neue Proof</title>
+<style>
+  /* Built by `make build`. Rename if your variable font has more axes than wght. */
+  @font-face {
+    font-family: "Spizz Neue";
+    src: url("../fonts/webfonts/SpizzNeue%5Bwght%5D.woff2") format("woff2"),
+         url("../fonts/webfonts/SpizzNeue-Regular.woff2") format("woff2"); /* until the variable build is on */
+    font-weight: 1 1000;
+  }
+  :root { --bg: #fafaf8; --fg: #111; --muted: #777; --rule: #ddd; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111; --fg: #eee; --muted: #888; --rule: #333; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 16px 80px; background: var(--bg); color: var(--fg);
+         font: 14px/1.4 system-ui, sans-serif; }
+  header { position: sticky; top: 0; background: var(--bg); padding: 8px 0 16px;
+           border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
+  h1 { font-size: 14px; margin: 0; margin-right: auto; }
+  label { display: flex; gap: 8px; align-items: center; color: var(--muted); }
+  output { font-variant-numeric: tabular-nums; min-width: 3ch; color: var(--fg); }
+  section { padding: 24px 0; border-bottom: 1px solid var(--rule); }
+  h2 { font-size: 12px; font-weight: 500; color: var(--muted); margin: 0 0 12px; }
+  .spizz { font-family: "Spizz Neue", "Adobe NotDef", monospace; font-weight: var(--wght, 400);
+           overflow-wrap: anywhere; outline: none; }
+  .row { display: flex; gap: 16px; align-items: baseline; }
+  .row small { width: 40px; flex: none; color: var(--muted); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Spizz Neue</h1>
+  <label>Weight <input id="wght" type="range" min="100" max="900" value="400"><output for="wght">400</output></label>
+  <label>Size <input id="size" type="range" min="12" max="240" value="72"><output for="size">72</output></label>
+</header>
+
+<section>
+  <h2>Editable: click to type</h2>
+  <div class="spizz" id="hero" contenteditable spellcheck="false">Hamburgefonstiv</div>
+</section>
+
+<section>
+  <h2>Weights</h2>
+  <div id="weights"></div>
+</section>
+
+<section>
+  <h2>Character set</h2>
+  <div class="spizz" style="font-size:40px">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 !?.,:;'"&amp;@#%*()[]{}/\-–—
+  </div>
+</section>
+
+<section>
+  <h2>Spacing strings</h2>
+  <div class="spizz" style="font-size:32px">
+    HHOHOOHOHH nnonoonon HAHBHCHDHEHF nanbncndnenf<br>
+    AVATAWAY To Tr Ty Va Vo We Yo LT LV LY "A" (f) [j]
+  </div>
+</section>
+
+<section>
+  <h2>Paragraph</h2>
+  <p class="spizz" style="font-size:18px;line-height:1.5;max-width:60ch" contenteditable spellcheck="false">
+    The quick brown fox jumps over the lazy dog. Sphinx of black quartz, judge my vow. Pack my box with five dozen liquor jugs. How vexingly quick daft zebras jump! 1234567890
+  </p>
+</section>
+
+<script>
+  const root = document.documentElement;
+  const hero = document.getElementById("hero");
+  const bind = (id, fn) => {
+    const input = document.getElementById(id), out = input.nextElementSibling;
+    const update = () => { out.value = input.value; fn(input.value); };
+    input.addEventListener("input", update); update();
+  };
+  bind("wght", v => root.style.setProperty("--wght", v));
+  bind("size", v => hero.style.fontSize = v + "px");
+
+  const weights = document.getElementById("weights");
+  for (let w = 100; w <= 900; w += 100) {
+    weights.insertAdjacentHTML("beforeend",
+      `<div class="row"><small>${w}</small><div class="spizz" style="font-size:36px;font-weight:${w}">Spizz Neue Typeface 123</div></div>`);
+  }
+</script>
+</body>
+</html>
