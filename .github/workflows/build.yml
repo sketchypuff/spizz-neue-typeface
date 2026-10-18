@@ -10,15 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
       - name: Check for sources
         id: sources
         run: |
-          if ls sources/*.glyphs sources/*.glyphspackage >/dev/null 2>&1; then
+          shopt -s nullglob
+          srcs=(sources/*.glyphs sources/*.glyphspackage)
+          if (( ${#srcs[@]} )); then
             echo "found=true" >> "$GITHUB_OUTPUT"
           else
             echo "No Glyphs source yet; skipping build."
@@ -30,7 +32,7 @@ jobs:
         if: steps.sources.outputs.found == 'true'
         run: make test PYTHON=python3
         continue-on-error: true
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: steps.sources.outputs.found == 'true'
         with:
           name: fonts

@@ -33,7 +33,7 @@ test: build
 	mkdir -p out/fontbakery
 	$(BIN)/fontbakery check-universal -l WARN --succinct \
 		--html out/fontbakery/report.html \
-		fonts/variable/*.ttf fonts/ttf/*.ttf
+		$(wildcard fonts/variable/*.ttf fonts/ttf/*.ttf)
 
 proof: build
 	@echo "Open http://localhost:8000/proof/"
