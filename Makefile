@@ -1,4 +1,5 @@
-SOURCES := $(wildcard sources/*.glyphs sources/*.glyphspackage)
+# Every file inside a .glyphspackage, so editing one glyph triggers a rebuild
+SOURCES := $(wildcard sources/*.glyphs) $(shell find sources -path '*.glyphspackage/*' -type f ! -name UIState.plist)
 VENV    := venv
 BIN     := $(VENV)/bin
 # gftools calls fontmake etc. by name, so the venv must be on PATH

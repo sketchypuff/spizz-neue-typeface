@@ -1,0 +1,54 @@
+{
+glyphname = E;
+layers = (
+{
+backgroundImage = {
+imagePath = "../Specimen cutouts/lfa_lehmann_0047_001 22.png";
+locked = 1;
+pos = (-59,-140);
+scale = (8.5865,8.5865);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(50,632,l),
+(531,632,l),
+(553,700,l),
+(72,700,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(144,0,l),
+(230,0,l),
+(230,673,l),
+(144,673,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(50,332,l),
+(531,332,l),
+(553,400,l),
+(72,400,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(187,0,l),
+(531,0,l),
+(553,68,l),
+(187,68,l)
+);
+}
+);
+width = 603;
+}
+);
+unicode = 69;
+}

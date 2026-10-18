@@ -1,0 +1,78 @@
+{
+.appVersion = "3532";
+.formatVersion = 3;
+date = "2026-10-17 14:58:11 +0000";
+familyName = "Spizz Neue";
+fontMaster = (
+{
+guides = (
+{
+angle = 72;
+pos = (843,461);
+}
+);
+id = m01;
+metricValues = (
+{
+over = 16;
+pos = 800;
+},
+{
+over = 16;
+pos = 700;
+},
+{
+over = 16;
+pos = 500;
+},
+{
+over = -16;
+},
+{
+over = -16;
+pos = -200;
+}
+);
+name = Regular;
+userData = {
+GSCornerRadius = 80;
+};
+}
+);
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+}
+);
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+}
+);
+unitsPerEm = 1000;
+userData = {
+GSDimensionPlugin.Dimensions = {
+m01 = {
+HH = "68";
+HV = "86";
+};
+};
+};
+versionMajor = 1;
+versionMinor = 0;
+}

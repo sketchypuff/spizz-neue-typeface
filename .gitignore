@@ -14,6 +14,7 @@ venv/
 __pycache__/
 .DS_Store
 
-# Glyphs autosave / backups
+# Glyphs autosave / backups / per-user UI state
+UIState.plist
 *.glyphs.bak
 sources/**/Autosave*

@@ -1,0 +1,36 @@
+{
+glyphname = T;
+layers = (
+{
+backgroundImage = {
+imagePath = "../Specimen cutouts/lfa_lehmann_0047_001 21.png";
+locked = 1;
+pos = (-81,-147);
+scale = (8.6197,8.6197);
+};
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(50,632,l),
+(543,632,l),
+(565,700,l),
+(72,700,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(260,0,l),
+(346,0,l),
+(346,663,l),
+(260,663,l)
+);
+}
+);
+width = 615;
+}
+);
+unicode = 84;
+}

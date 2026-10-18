@@ -1,6 +1,6 @@
 # gftools builder config — see https://github.com/googlefonts/gftools/blob/main/docs/gftools-builder/README.md
 sources:
-  - SpizzNeue.glyphs
+  - SpizzNeue.glyphspackage
 familyName: Spizz Neue
 outputDir: ../fonts
 buildVariable: false  # turn on once there are 2+ masters on a Weight axis

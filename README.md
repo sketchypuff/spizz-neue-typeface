@@ -5,7 +5,7 @@ Source and build pipeline for the Spizz Neue typeface.
 ## Layout
 
 ```
-sources/SpizzNeue.glyphs   Glyphs source (save it here)
+sources/SpizzNeue.glyphspackage   Glyphs source (one file per glyph)
 sources/config.yaml        gftools builder config
 proof/index.html           Browser proofing page
 fonts/                     Build output, not committed
@@ -36,7 +36,7 @@ The first `make build` creates `venv/` and installs everything in `requirements.
 
 ## Glyphs source notes
 
-- Name the file `SpizzNeue.glyphs` (or change `sources:` in `sources/config.yaml`).
+- The source is `SpizzNeue.glyphspackage` (or change `sources:` in `sources/config.yaml`).
 - Define masters along a Weight axis and add an instance for each static weight you want.
   Static fonts are generated from those instances.
 - If the variable font has more axes than `wght`, update the `@font-face` URL in
