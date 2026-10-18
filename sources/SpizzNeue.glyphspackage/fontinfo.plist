@@ -8,7 +8,7 @@ fontMaster = (
 guides = (
 {
 angle = 72;
-pos = (275,429);
+pos = (418,233);
 }
 );
 id = m01;
@@ -68,7 +68,7 @@ unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {
 m01 = {
-HH = "68";
+HH = "76";
 HV = "86";
 };
 };

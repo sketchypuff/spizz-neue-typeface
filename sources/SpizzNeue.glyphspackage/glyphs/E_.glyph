@@ -2,19 +2,13 @@
 glyphname = E;
 layers = (
 {
-backgroundImage = {
-imagePath = "../Specimen cutouts/lfa_lehmann_0047_001 22.png";
-locked = 1;
-pos = (-82,-140);
-scale = (8.5865,8.5865);
-};
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(27,632,l),
-(508,632,l),
+(25,624,l),
+(505,624,l),
 (530,700,l),
 (49,700,l)
 );
@@ -31,9 +25,9 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(27,332,l),
-(508,332,l),
-(530,400,l),
+(24,324,l),
+(475,324,l),
+(500,400,l),
 (49,400,l)
 );
 },
@@ -41,9 +35,9 @@ nodes = (
 closed = 1;
 nodes = (
 (164,0,l),
-(508,0,l),
-(530,68,l),
-(164,68,l)
+(505,0,l),
+(530,76,l),
+(164,76,l)
 );
 }
 );

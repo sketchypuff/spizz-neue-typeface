@@ -1,0 +1,21 @@
+{
+glyphname = one;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(136,0,l),
+(136,700,l),
+(50,700,l),
+(50,0,l)
+);
+}
+);
+width = 186;
+}
+);
+unicode = 49;
+}
