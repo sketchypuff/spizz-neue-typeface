@@ -5,7 +5,7 @@ layers = (
 backgroundImage = {
 imagePath = "../Specimen cutouts/lfa_lehmann_0047_001 16.png";
 locked = 1;
-pos = (-180,-127);
+pos = (-195,-127);
 scale = (8.4499,8.4499);
 };
 layerId = m01;
@@ -13,23 +13,23 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(101,33,l),
-(187,33,l),
-(187,700,l),
-(101,700,l)
+(86,33,l),
+(172,33,l),
+(172,700,l),
+(86,700,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(50,0,l),
-(513,0,l),
-(535,68,l),
-(72,68,l)
+(35,0,l),
+(498,0,l),
+(520,68,l),
+(57,68,l)
 );
 }
 );
-width = 585;
+width = 535;
 }
 );
 unicode = 76;

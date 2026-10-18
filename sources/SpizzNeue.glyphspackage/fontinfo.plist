@@ -8,7 +8,7 @@ fontMaster = (
 guides = (
 {
 angle = 72;
-pos = (843,461);
+pos = (275,429);
 }
 );
 id = m01;
