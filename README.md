@@ -47,3 +47,16 @@ The first `make build` creates `venv/` and installs everything in `requirements.
 `.github/workflows/build.yml` builds and runs Fontbakery on every push and pull request.
 The built fonts and the QA report are uploaded as a workflow artifact.
 The build step is skipped until a Glyphs source is committed.
+
+## Releasing
+
+1. In Glyphs, set the version in Font Info → Font → Version (for example 0.1) and save.
+2. Commit, then tag and push:
+
+   ```bash
+   git tag v0.1
+   git push origin v0.1
+   ```
+
+CI builds the fonts and publishes a GitHub Release with `SpizzNeue-v0.1.zip`.
+Tags starting with `v0` are marked as pre-releases.
